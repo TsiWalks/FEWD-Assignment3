@@ -41,6 +41,13 @@ Developer @GA in NYC
   float: left;
   padding: 0 10px 10px 0; /* note the padding around a left floated image */
 }
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 /******************************************
 /* BASE STYLES
@@ -79,108 +86,83 @@ h1 {
   font-size: 0;
 }
 
-.logo {
-  font-family: 'open sans';
-  font-weight: 800;
-  font-size: 24px;
-  text-align: left;
-  padding: 2em;
-  color: white;
-}
-
 .horizontal li {
+  color: #f9e42e; 
+  display: inline;
+  font-size: 24px;
+  font-style: normal;
   list-style-type: none;
-  display: inline-block;
-  font-size: 24px;
-  font-family: 'open sans';
-  font-weight: 600;
-  color: #f6e42e;
-  float: right;
-  padding-right: 2%;
-
+  margin: 0;
+  padding: 0;
+  background-color: #043049;
 }
 
-footer {
-  clear: both;
-  color: white;
-  text-align: center;
-  padding-bottom: 10px;
-  vertical-align: justify;
-  background-color: black;
-  margin-top: 0px;
+h2 {
+  font-size: 40px;
+  font-weight: 700;
 }
 
-.logo {
-  font-family: 'open sans';
+h3 {
+  font-size: 32px;
   font-weight: 800;
-  font-size: 24px;
+}
+
+.main {
+  clear: both;
+  width: 75%;
+  float: left;
 }
 
 article {
-  font-family: 'open sans';
-  font-weight: 300;
+  border-bottom: solid;
+  padding-bottom: 1em;
   font-size: 24px;
-  padding-bottom: 2 %;
-  float: left;
-  width: 72.91666666666666%;
-  margin-right: 2.0833333333333332%;
-}
-
-.readmore {
-  font-family: 'open sans';
-  font-weight: 600;
-  text-align: right;
-  width: 100%;
-  display: inline-block;
-
+  font-weight: 300; 
 }
 
 aside {
   float: right;
   width: 25%;
-  margin-right: 0;
-
 }
 
-.sidenav ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  float: right;
-  margin-right: 0;
-  display: inline-block;
+footer {
+  clear: both;
+  width: 100%;
+  background-color: black;
+  padding-bottom: 2%;
+  color: #fdfdfc;
+  text-align: center;
 }
 
-.sidenav li{
-  font-family: 'open sans';
+.logo {
   font-size: 24px;
-  font-weight: 300;
-}
-
-.sidenav h3 {
-  font-family: 'open sans';
-  font-size: 32px;
   font-weight: 800;
+  color: white;
+  background-color: #043049
+}
+
+.signupnow {
+  clear: both;
+  text-align: center;
+  height: 4em;
+  background-color: #f9e42e; 
 }
 
 
+
+button {
+  font-size: 12px;
+  border-radius: 5px;
+}
 
 footer .logo {
-  color: #f9e42e;
-  text-align: center;
-  vertical-align: justify;
-
+  color: #f9e42e; 
 }
 
-footer img {
-  padding-bottom: 10px;
-  margin: 0px 10px 10px 10px; 
-}
-
-.main {
-  float: left;
-  width: 72.91666666666666%;
-  margin-right: 2.0833333333333332%;
+aside li {
+  list-style: none;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 /******************************************
